@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter List</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <style>
+    .hide {
+      display: none
+    }
+    @media screen and (max-width: 1920px) {
+      #container {
+        width: 25%;
+      }
+    }  
+    @media screen and (max-width: 1400px) {
+      #container {
+        width: 30%;
+      }
+    }  
+    @media screen and (max-width: 1200px) {
+      #container {
+        width: 50%;
+      }
+    }  
+    @media screen and (max-width: 900px) {
+      #container {
+        width: 70%;
+      }
+    }  
+    @media screen and (max-width: 700px) {
+      #container {
+        width: 60%;
+      }
+    }  
+    @media screen and (max-width: 600px) {
+      #container {
+        width: 110%;
+      }
+    }  
+  </style>
+
+  <body>
+    <div class="container p-5" id="container">
+      <div
+        class="border border-info bg-dark rounded-top border border-3 mb-1"
+        id="header">
+        <h2 class="text-info mt-4 ms-4" id="title">Search User</h2>
+        <p class="text-info ms-4" id="subtitle">
+          Search people by Name or Location
+        </p>
+        <div class="">
+          <input
+          class="border border-info rounded-pill ms-4 mb-4 border border-3 p-2"
+          id="search"
+          type="text"
+          placeholder="Search"
+          />
+        </div>
+      </div>
+
+      <div
+        class="container-fluid border p-4 border-info bg-dark rounded-bot border border-3"
+        id="content"
+      >
+        <div class="" id="user-list">
+        <div class="loading m-3">
+          <h3 class="text-info">Loading...</h3>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <!-- <script type="module" src="bozza.js"></script> -->
+  </body>
+</html>
